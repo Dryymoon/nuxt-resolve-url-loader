@@ -42,7 +42,7 @@ After:
         use: [
           // ... Other loaders
           {loader: 'resolve-url-loader'},
-          {loader: 'scss-loader'}        
+          {loader: 'scss-loader', options: {sourceMap: true}}        
         ]      
       }     
     ]
