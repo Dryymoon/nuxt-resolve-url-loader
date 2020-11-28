@@ -1,6 +1,6 @@
 {
   "name": "nuxt-resolve-url-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nuxt module for adding resolve-url-loader to webpack config.",
   "main": "nuxt-resolve-url-loader.js",
   "scripts": {

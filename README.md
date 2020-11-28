@@ -9,7 +9,8 @@
 This module:
 * traverse whole webpack config tree
 * find json-paths to scss-loader configs by matching ```{loader: 'scss-loader'}``` 
-* insert resolve-url-loader just before scss-loader configs.
+* insert resolve-url-loader just before scss-loader configs in nuxt webpack config.
+* reconfigure scss-loader for adding source-maps
 
 Before:
 ```javascript
