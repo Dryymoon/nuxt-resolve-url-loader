@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Dryymoon/nuxt-resolve-url-loader.git"
   },
-  "author": "Igor Pylypenko",
+  "author": "Igor Pylypenko [dryymoon]",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Dryymoon/nuxt-resolve-url-loader/issues"
@@ -21,5 +21,15 @@
   },
   "peerDependencies": {
     "resolve-url-loader": "^3.1.2"
-  }
+  },
+  "keywords": [
+    "nuxt",
+    "nuxtjs",
+    "vue",
+    "ssr",
+    "webpack",
+    "resolve-url-loader",
+    "scss",
+    "path"
+  ]
 }

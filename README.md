@@ -3,7 +3,51 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
-> Easy add 'resolve-url-loader' to Nuxt.js webpack config
+> Easy add 'resolve-url-loader' to Nuxt.js webpack config before scss-loader
+
+## How it works
+This module:
+* traverse whole webpack config tree
+* find json-paths to scss-loader configs by matching ```{loader: 'scss-loader'}``` 
+* insert resolve-url-loader just before scss-loader configs.
+
+Before:
+```javascript
+{ // ... Webpack config
+  module: {
+    // ...
+    rules: [
+      // ...
+      {
+        test: /\.scss$/,
+        use: [
+          // ... Other loaders
+          {loader: 'scss-loader'}        
+        ]      
+      }     
+    ]
+  }
+}
+```
+After:
+```javascript
+{ // ... Webpack config
+  module: {
+    // ...
+    rules: [
+      // ...
+      {
+        test: /\.scss$/,
+        use: [
+          // ... Other loaders
+          {loader: 'resolve-url-loader'},
+          {loader: 'scss-loader'}        
+        ]      
+      }     
+    ]
+  }
+}
+```
 
 ## Requirements
 
